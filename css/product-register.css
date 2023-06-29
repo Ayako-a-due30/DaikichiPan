@@ -1,0 +1,74 @@
+@charset "utf8";
+
+.register-table{
+  margin: 50px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.product-regist {
+  margin: 50px;
+  padding: 50px;
+}
+
+.register-row{
+  height: 100px;
+  padding: 20px;
+  margin: 20px;
+  height: 80px;
+}
+
+.register-table>tr>td {
+  height: 80px;
+  width: 100%;
+}
+
+input[type="input"] {
+  height: 80px;
+}
+
+input[type="submit"] {
+  background-color: #FCBF49;
+  color: #003049;
+  font-size: 26px;
+  padding: 20px;
+  border: none;
+  border-radius: 30px;
+  height: 70px;
+  width: 500px;
+  text-align: center;
+}
+
+input[type="submit"]:hover {
+  background-color: #F77F00;
+  color: #EAE2B7;
+}
+
+.link-button {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.product-img {
+  height: 200px;
+}
+
+.product-table {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.product-table>tr {
+  border-top: 30px;
+  border-bottom: 30px;
+}
+
+.product-data {
+  text-align: center;
+}
+
+.small-btn {
+  width: 200px;
+  height: 50px;
+}

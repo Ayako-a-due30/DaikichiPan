@@ -1,0 +1,52 @@
+@charset "utf8";
+
+.product-img{
+  height: 100px;
+}
+td{
+  text-align: center;
+  padding:20px;
+}
+
+table{
+  margin-top: 150px;
+  margin-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+select {
+  border: none;
+  font-size: 20px;
+  border: 5px;
+}
+
+input[type="submit"] {
+  background-color: #f77f00;
+  width: 100px;
+  height: 30px;
+  border: none;
+  border-radius: 20px;
+}
+
+.session-notice {
+  border: 100px;
+  background-color: #FCBF49;
+  height: 100px;
+  width: 500px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 50px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 30px;
+  font-family: 'BIZ UDGothic', sans-serif;  
+  font-size: 30px;
+}
+
+.notice-link {
+  font-size: 20px;
+}
+.notice-link :hover{
+  color: #f77f00;
+}

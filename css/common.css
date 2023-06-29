@@ -1,0 +1,189 @@
+@charset "utf-8";
+
+*,
+::before,
+::after{
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #000;
+  line-height: 1.5;
+  background-color: #EAE2B7;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p {
+  font-family: 'BIZ UDGothic', sans-serif;}
+
+header {
+  background-color: #003049;
+  height: 250px;
+}
+.header-inner {
+  padding-top: 50px;
+  max-width: 1200px;
+  height: 110px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-site-menu>nav>ul>li>a {
+  color: #EAE2B7;
+}
+
+.site-menu>ul {
+  display: flex;
+}
+
+.site-menu>ul>li {
+  list-style: none;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.site-menu>ul>li>a {
+  font-family: 'RocknRoll One', sans-serif;
+  font-size: 20px;
+}
+
+.site-menu>ul>li>a:hover {
+  color: #FCBF49;
+}
+
+
+.toggle-menu-button {
+  display: none;
+}
+
+.header-logo-img {
+  width: 300px;
+}
+
+.footer-logo-img {
+  width: 300px;    
+  margin-top: 40px;
+}
+
+footer {
+  background-color: #F77F00;
+  display: flex;
+  flex-direction: column;
+  font-family: 'RocknRoll One', sans-serif;
+  align-items: center;
+  color: #003049;
+  padding-top: 50px;
+}
+
+.footer-tel {
+  font-size: 25px;
+  margin-top: 25px;
+  font-family: 'RocknRoll One', sans-serif;
+}
+
+.footer-time {
+  font-family: 'RocknRoll One', sans-serif;
+}
+
+.copyright {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: 'RocknRoll One', sans-serif;
+}
+
+@media (max-width:800px) {
+  .site-menu ul {
+    display: block;
+    text-align: center;
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 200px;
+    background-color: #003049;
+    z-index: 10;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  }
+
+  .header-logo-img {
+    width: 180px;
+  }
+
+  .toggle-menu-button {
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-image:url(../imgs/list.svg);
+    fill:#F77F00;
+
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    border: none;
+    background-color: inherit;
+  }
+
+  .header-inner {
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+  }
+  
+  .header-logo {
+    width: 100%;
+  }
+
+  .header-site-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #F77F00;
+    margin-top: 40px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    display: none;
+  }
+  
+  .header-site-menu.is-show {
+    display: block;
+  }
+
+  main {
+    padding-top: 150px;
+    padding-bottom: 50px;
+  }
+
+  footer {
+    padding-top: 20px;
+  }
+
+  .footer-logo-img {
+    margin-top: 20px;
+  }
+
+  footer>p{
+    font-family: 'RocknRoll One', sans-serif;
+
+  }
+  .copyright {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}

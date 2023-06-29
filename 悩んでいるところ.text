@@ -1,0 +1,41 @@
+カートの挙動がおかしい
+
+
+$_SESSION
+array(2) { 
+  ["product"]=> array(3) { ←ここが出力されてしまうif(!empty($_SESSION['product']))の条件で挙動しない理由がわからない。
+    [""]=> array(5) { 
+      ["product_id"]=> NULL 
+      ["product_name"]=> NULL 
+      ["product_img"]=> NULL 
+      ["price"]=> NULL ["count"]=> int(0) 
+      } 
+      [1]=> array(5) { 
+        ["product_id"]=> string(1) "1" 
+        ["product_name"]=> string(18) "全粒粉ブール" 
+        ["product_img"]=> string(5) "1.jpg" 
+        ["price"]=> string(3) "300" 
+        ["count"]=> int(3) 
+        } 
+      [2]=> array(5) { 
+        ["product_id"]=> string(1) "2" 
+        ["product_name"]=> string(18) "クロワッサン" 
+        ["product_img"]=> string(5) "2.jpg" 
+        ["price"]=> string(3) "400" 
+        ["count"]=> int(4) 
+        } 
+        } 
+      ["customer"]=> array(10) { 
+        ["customer_id"]=> int(1) [0]=> int(1) 
+        ["name"]=> string(15) "熊木熊太郎" 
+        [1]=> string(15) "熊木熊太郎" 
+        ["Email"]=> string(17) "kumakuma@mail.com" 
+        [2]=> string(17) "kumakuma@mail.com" 
+        ["password"]=> string(9) "beartree1" 
+        [3]=> string(9) "beartree1" 
+        ["tel"]=> string(11) "123-456-789" 
+        [4]=> string(11) "123-456-789" } }
+
+商品を追加する処理をするとログアウトしてしまう。
+$_REQUESTが空になっているのに「商品を追加しました」って出ちゃう。
+カートの内容をproduct_id毎に挿入するときにforeachで回していいのかわからない。
